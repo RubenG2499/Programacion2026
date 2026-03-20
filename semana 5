@@ -1,0 +1,23 @@
+#Juego piedra, papel o tijera
+#pedir al usuario que ingrese su eleccion
+#el programa va a decidir quien es el ganador
+#el programa decidesegun las reglas del piedra, papel o tijera
+#y si el programa elige lo mismo hay empate
+#INICIO
+#ESCRIBIR "haga su eleccion entre papel,piedra o papel?:"
+#LEER A
+#si piedra == papel
+#ESCRIBIR "¡ganaste!"
+#si piedra == tijera
+#ESCRIBIR "perdiste :c"
+#si piedra == pierda
+#ESCRIBIR "empate"
+#FIN
+a= input ("escoge piedra, papel o tijera:")
+
+if a == "papel":
+    print ("ganaste, escogi piedra")
+elif a== "tijeras":
+    print ("perdiste, escogi piedra")
+elif a== "piedra":
+    print("empate, escogimos lo mismo")
