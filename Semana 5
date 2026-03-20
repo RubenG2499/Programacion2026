@@ -1,0 +1,23 @@
+#si el numero es mayor a 0 va a hacer positivo
+#si el numero es igual a 0 va a hacer neutro
+#INICIO
+#ESCRIBIR "ingrese un numero"
+#LEER a
+#si a < 0
+#ESCRIBIR "el numero es negativo" 
+#si a > 0
+#ESCRIBIR "el numero es positivo"
+#si a==0
+#ESCRIBIR "el numero es neutro"
+
+a = int(input("ingrese un numero"))
+if a <0:
+ print("el numero es negativo")
+ 
+ 
+elif a >0:
+ print("el numero es postivo")
+
+
+elif a == 0:
+ print ("el numero es neutro")
