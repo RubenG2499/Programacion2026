@@ -1,0 +1,23 @@
+#pedir al usuario nombre y edad del niño
+#ingresar nombre y edad del niño
+#Escribir
+#INICIO
+#Edad y nombre del niño
+#si es menor a 11 corresponde a atencion pedriatica
+#si es menor o igual a 17 corresponde a atencion para adolescentes
+#si es menor a 59 corresponde a atencion para adulto mayor
+# si es negativo o mayor de 120 es error: la edad ingresada es invalida
+#FIN
+a = (input("Ingrese el nombre del niño:"))
+b = int(input("ingrese la edad del niño:"))
+if b <11:
+    print("corresponde a atencion pedriatica")
+
+elif b <= 17:
+    print("corresponde a atencion para adolescentes")
+
+elif b < 59:
+    print ("corresponde a atencion para adulto mayor")
+
+elif b > 120:
+    print("Error: la edad ingresada es invalida")
