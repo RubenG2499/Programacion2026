@@ -1,0 +1,24 @@
+#Pedir al usuario que ingrese su nombre y su numero de consumo
+#Ingresar nombre
+#ingresar numero de consumo
+#ESCRIBIR "Ingrese su nombre y numero de consumo"
+#indicar si tiene buen consumo o no
+#ESCRIBIR
+#si es 0 es un error debe ser mayor a 0
+#si es menor o igual a 15 indicar que es un buen consumo
+#si es menor a 30 el consumo esta dentro del promedio
+#si es mayor a 30 el consumo es alto, revisar fuga
+#FIN
+a= (input("ingrese su nombre:"))
+b= int(input("ingrese numero de consumo:"))
+if b <= 0:
+    print("Error: el consumo debe ser mayor a cero")
+
+elif b <= 15:
+    print("Tu consumo es excelente, eres un usuario responsable")
+
+elif b < 30:
+    print ("Tu consumo esta dentro del promedio del hogar")
+
+elif b > 30:
+    print ("Tu consumo es alto, revisa posible fugas")
