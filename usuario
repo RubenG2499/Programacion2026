@@ -1,0 +1,7 @@
+usuario = input ("ingrese su usuario:")
+contraseña = input ("ingrese su contraseña:")
+if usuario == "admin" and contraseña == "1234":
+    print ("permiso concedido,cargando sistemas...")
+
+else:
+    print ("los datos no son correctos permiso denegado")
