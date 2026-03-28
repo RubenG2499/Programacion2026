@@ -1,0 +1,7 @@
+a= int(input("ingresa tu edad"))
+b= input("ingresa tu licencia de conducir?(si/no)")
+
+if a >= 18 and b=="si":
+    print ("si puedes conducir")
+elif a < 18 and b== "no":
+    print ("no puedes conducir")
