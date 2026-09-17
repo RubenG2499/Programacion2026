@@ -1,0 +1,32 @@
+public class Empleado {
+    private String nombre;
+    private String cargo;
+    private double salarioBase;
+    private int añosExperiencia;
+
+    public Empleado() {
+    }
+
+    public Empleado(String nombre, String cargo, double salarioBase, int añosExperiencia) {
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.salarioBase = salarioBase;
+        this.añosExperiencia = añosExperiencia;
+    
+   
+        
+    }
+    public String verDetalle(){
+        return " empleado se llama:"+ nombre;  
+    }   
+    public String Cargo(){
+        return "el cargo del empleado es:"+ cargo;
+        
+    }    
+    public String Salario(){
+        return "el salario es:"+ salarioBase;
+    }
+    public String añosExp(){
+        return "los años de experiencia es:"+ añosExperiencia;
+    }
+    
