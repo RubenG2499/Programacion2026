@@ -1,0 +1,27 @@
+public class EmpleadoJava {
+
+    /**
+     * @param args the command line arguments
+     */
+  public static void main(String[] args) {
+     Empleado empleado1 = new Empleado();
+     empleado1.setNombre("Ruben");
+     empleado1.setCargo("progamador");
+     empleado1.setSalarioBase(300000);
+     empleado1.setAñosExperiencia(5);
+     
+     System.out.println(empleado1.getNombre);
+     System.out.println(empleado1.getCargo);
+     System.out.println(empleado1.getsalarioBase);
+     System.out.println(empleado1.getanosExperiencia);
+     System.out.println(empleado1.getVerDetalle);
+     System.out.println(empleado1.getTrabajar);
+     System.out.println(empleado1.getDescansar);
+     System.out.println(empleado1.getDescansaryTrabajar);
+     System.out.println(empleado1.getCalcularBono);
+     System.out.println(empleado1.getCalcularBono);
+     System.out.println(empleado1.getSalarioTotal);
+     
+    }
+    
+}
