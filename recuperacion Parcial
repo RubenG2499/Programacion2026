@@ -1,0 +1,75 @@
+public class NewClass {
+   private String nombre;
+   private String categoria;
+   private double precio;
+   private int cantidadStock;
+
+    public NewClass(String nombre, String categoria, double precio, int cantidadStock) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.cantidadStock = cantidadStock;
+  
+    
+    }    
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getCantidadStock() {
+        return cantidadStock;
+    }
+
+    public void setCantidadStock(int cantidadStock) {
+        this.cantidadStock = cantidadStock;
+    }
+    
+    public String verDetalle(){
+        String Estadisticas="nombre"+ nombre + "\n"
+        + "categoria"+ categoria + "\n"
+        +"precio"+ precio + "\n"
+        + "cantidad"+ cantidadStock + "\n";
+         return Estadisticas;
+    }    
+    public double calcularDescuento(int porcentaje){
+        return this.precio*porcentaje/100.0;
+        
+    }     
+    public double calcularDescuento(double porcentaje){
+        return this.precio*porcentaje/100.0;
+        
+    }  
+    public double calcularPrecioFinal (double porcentaje){
+        return this.precio-this.calcularDescuento(cantidadStock);
+    }
+    public String vender (int cantidad){
+        if (cantidad <= this.cantidadStock) {
+        this.cantidadStock = cantidad;
+        return "Venta realizada con exito. unidad vendida: " + cantidad + "\n restante: " + this.cantidadStock;
+    } else {
+        return "Error: No hay suficiente inventario para realizar la venta. restante: " + this.cantidadStock;
+    }
+    }
+    }
+   
