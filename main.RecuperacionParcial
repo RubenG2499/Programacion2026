@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Producto portatil = new Producto("portatil", "Electrónica", 1200.0, 10);
+        System.out.println(" DETALLE INICIAL ");
+        System.out.println(portatil.verDetalle());
+        double porcentajeDescuento = 15.0;
+        double descuento = portatil.calcularDescuento(porcentajeDescuento);
+        double precioFinal = portatil.calcularPrecioFinal(porcentajeDescuento);
+        System.out.println("CÁLCULO DE DESCUENTO (" + porcentajeDescuento + "%) ");
+        System.out.println("Monto del descuento: $" + descuento);
+        System.out.println("Precio con descuento: $" + precioFinal + "\n");  
+        System.out.println(" PROBANDO VENTAS ");
+        System.out.println(portatil.vender(3));
+        System.out.println(portatil.vender(10)); 
+        System.out.println("\n DETALLE FINAL ");
+        System.out.println(portatil.verDetalle());
+    }
+}
